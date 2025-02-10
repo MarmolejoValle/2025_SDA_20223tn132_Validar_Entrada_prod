@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de empresa</title>
+</head>
+<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+
+<body>
+    <div class="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
+        <div class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
+            aria-hidden="true">
+
+        </div>
+        <div class="mx-auto max-w-2xl text-center">
+            <h2 class="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Registro de empresa
+            </h2>
+            <p class="mt-2 text-lg/8 text-gray-600">Ingresa tus datos</p>
+        </div>
+        <form action="" class="mx-auto mt-16 max-w-xl sm:mt-20">
+            <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                <div>
+                    <label for="rs" class="block text-sm/6 font-semibold text-gray-900">Razon Social</label>
+                    <input type="text" name="rs" id="rs"
+                        class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600">
+                    <label id="rs-avis" class="text-red-600 text-1xl"></label>
+                </div>
+                <div>
+                    <label for="rfc" class="block text-sm/6 font-semibold text-gray-900">RFC</label>
+                    <input type="text" name="rfc" id="rfc"
+                        class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600">
+                    <label for="rfc-avis"></label>
+                </div>
+                <div>
+                    <label for="tel" class="block text-sm/6 font-semibold text-gray-900">Telefono</label>
+                    <input type="tel" name="rel" id="tel" min="13" max="13"
+                        class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600">
+                    <label for="rel-avis" id="tel-avis"></label>
+
+                </div>
+                <div>
+                    <label for="contact" class="block text-sm/6 font-semibold text-gray-900">Contacto</label>
+                    <input type="text" name="contact" id="contact"
+                        class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600">
+                    <label for="contact-avis"></label>
+
+                </div>
+                <div>
+                    <label for="mail" class="block text-sm/6 font-semibold text-gray-900">Correo</label>
+                    <input type="email" name="contact" id="mail" 
+                        class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600">
+                    <label for="mail-avis"></label>
+
+                </div>
+                <div class="mt-5">
+                    <button id="send"
+                        class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Enviar
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
