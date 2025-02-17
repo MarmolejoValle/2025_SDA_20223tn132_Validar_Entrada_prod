@@ -5,18 +5,17 @@ const contact = document.getElementById('contact');
 const mail = document.getElementById('mail');
 const forms = document.getElementById('forms');
 const button = document.getElementById('button');
-button.style.backgroundColor = 'black';
-
+button.style.backgroundColor = 'gray';
+button.style.filter = 'blur(.7px)';
 
 
 function alertLabel(label, text) {
     label.innerText = text;
-    label.style.color = 'red'
+    label.style.color = 'red';
+    label.setAttribute('class','text-sm')
 }
-
 function verificRS() {
     const alertL = document.getElementById('rs-avis');
-
     if (!rs.value) {
         alertLabel(alertL, "Necesitas ingresar una razon social")
         return false;
@@ -48,6 +47,7 @@ function verificTel() {
     return true;
 
 }
+
 function verificRFC() {
     const rfcEmpresaRegex = /^[A-ZÑ&]{3}\d{6}[A-Z0-9]{3}$/;
 
@@ -65,6 +65,7 @@ function verificRFC() {
     return true;
 
 }
+
 function verificMail() {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
@@ -109,6 +110,8 @@ function allVerific() {
         verificMail() &&
         verificContact()) {
         button.style.backgroundColor = '';
+        button.style.filter = 'blur(0px)';
+
         return true
     }
 
@@ -122,7 +125,7 @@ function allVerific() {
 
     rfc.addEventListener('change', () => allVerific())
 
-    button.style.backgroundColor = 'black';
+    button.style.backgroundColor = 'gray';
     return false
 
 }
